@@ -1,0 +1,35 @@
+# Site settings
+title: CodeSha.me
+email: caleyjack@me.com
+description: "Sometimes bad code causes headaches. Shame those developers here and teach everyone a thing or two!"
+baseurl: ""
+url: "http://codesha.me"
+twitter_username: caleyjack
+github_username:  robojack
+
+# Build settings
+markdown: redcarpet
+permalink: pretty
+
+exclude:
+  - '*.haml'
+  - 'bower_components'
+  - 'node_modules'
+  - '*.rb'
+  - '*.coffee'
+  - 'Guardfile'
+  - 'Procfile'
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - '*.yml'
+  - 'app'
+  - 'bower.json'
+  - 'package.json'
+  - 'Gruntfile.coffee'
+  - '.fontcustom-manifest.json'
+  - 'Readme.md'
+
+
+defaults:
+  values:
+    layout: "default"
