@@ -1,7 +1,7 @@
 # Site settings
 title: CodeSha.me
 email: caleyjack@me.com
-description: "Sometimes bad code causes headaches. Shame those developers here and teach everyone a thing or two!"
+description: "Shaming developers one iteration at a time since 2014"
 baseurl: ""
 url: "http://codesha.me"
 twitter_username: caleyjack
@@ -9,7 +9,12 @@ github_username:  robojack
 
 # Build settings
 markdown: redcarpet
+highlighter: pygments
 permalink: pretty
+
+# Pagination
+paginate: 10
+paginate_path: "page/:num"
 
 exclude:
   - '*.haml'
