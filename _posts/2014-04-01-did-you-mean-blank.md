@@ -2,7 +2,8 @@
 layout: post
 title:  "Did you mean blank?"
 date:   2014-04-01 15:18:00
-categories: ruby-on-rails
+tags:   ruby-on-rails
+author: robojack
 ---
 
 

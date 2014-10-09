@@ -2,7 +2,8 @@
 layout: post
 title:  "Will the real selector please stand up"
 date:   2014-04-28 15:16:00
-categories: css
+tags:   css
+author: keighl
 ---
 
 

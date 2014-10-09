@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "Silly jQuery selector"
+title:  "He's escaping!"
 date:   2014-09-25 15:14:00
-categories: jquery
+tags:   jquery
+author: robojack
 ---
 
-Rule of thumb, if you're targeting an element with an ID with jQuery, just use the ID as the selector.
+If you're targeting a DOM element with an ID, use the ID as the selector. Mmmkay?
 
 
 {% highlight javascript %}

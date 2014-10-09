@@ -2,15 +2,16 @@
 layout: post
 title:  "There has to be a better way!"
 date:   2014-04-02 15:18:00
-categories: ruby-on-rails
+tags:   ruby-on-rails
+author: robojack
 ---
 
+Creating a new array from an array just to iterate through it? Shameful.
 
 {% highlight ruby %}
 [details[0], details[1], details[2]].each do |item|
 {% endhighlight %}
 
 {% highlight ruby %}
-# DRY me off son!
 details[0..2].each do |item|
 {% endhighlight %}

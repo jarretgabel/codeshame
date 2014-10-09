@@ -1,5 +1,4 @@
 @import compass/css3
-@import compass/css3/user-interface
 @import susy
 
 // SUSY grid defaults
@@ -84,57 +83,46 @@ $grid-padding  : $gutter-width
   position: absolute
 
 
-// Responsive spacing helpers
-$mobile_vertical_spacing  : 30px
-$tablet_vertical_spacing  : 40px
-$desktop_vertical_spacing : 60px
 
-=vertical-padding($multiple: 1)
-  padding: $mobile_vertical_spacing * $multiple 0
+////////////////////////////////////
+// Font Antialiasing ///////////////
+////////////////////////////////////
 
-  +tablet
-    padding: $tablet_vertical_spacing * $multiple 0
-
-  +desktop
-    padding: $desktop_vertical_spacing * $multiple 0
+=antialiased
+  -webkit-font-smoothing: antialiased
+  font-smoothing: antialiased
 
 
-=margin-top($multiple: 1)
-  margin-top: $mobile_vertical_spacing * $multiple
 
-  +tablet
-    margin-top: $tablet_vertical_spacing * $multiple
+////////////////////////////////////
+// Responsive Vertical Spacing /////
+////////////////////////////////////
 
-  +desktop
-    margin-top: $desktop_vertical_spacing * $multiple
+=vertical-spacing($type: margin, $top-multiplier: 1, $bottom-multiplier: "", $base: 30px)
 
+  @if $bottom-multiplier == ""
+    $bottom-multiplier: $top-multiplier
 
-=margin-bottom($multiple: 1)
-  margin-bottom: $mobile_vertical_spacing * $multiple
+  @if $type == margin
+    margin-top: $base * $top-multiplier
+    margin-bottom: $base * $bottom-multiplier
 
-  +tablet
-    margin-bottom: $tablet_vertical_spacing * $multiple
+    +tablet
+      margin-top: $base * ($top-multiplier * 1.5)
+      margin-bottom: $base * ($bottom-multiplier * 1.5)
 
-  +desktop
-    margin-bottom: $desktop_vertical_spacing * $multiple
+    +desktop
+      margin-top: $base * ($top-multiplier * 2)
+      margin-bottom: $base * ($bottom-multiplier * 2)
 
+  @if $type == padding
+    padding-top: $base * $top-multiplier
+    padding-bottom: $base * $bottom-multiplier
 
-=padding-bottom($multiple: 1)
-  padding-bottom: $mobile_vertical_spacing * $multiple
+    +tablet
+      padding-top: $base * ($top-multiplier * 1.5)
+      padding-bottom: $base * ($bottom-multiplier * 1.5)
 
-  +tablet
-    padding-bottom: $tablet_vertical_spacing * $multiple
-
-  +desktop
-    padding-bottom: $desktop_vertical_spacing * $multiple
-
-
-=padding-top($multiple: 1)
-  padding-top: $mobile_vertical_spacing * $multiple
-
-  +tablet
-    padding-top: $tablet_vertical_spacing * $multiple
-
-  +desktop
-    padding-top: $desktop_vertical_spacing * $multiple
-
+    +desktop
+      padding-top: $base * ($top-multiplier * 2)
+      padding-bottom: $base * ($bottom-multiplier * 2)

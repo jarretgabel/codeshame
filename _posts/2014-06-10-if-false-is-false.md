@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "False is always false"
+title:  "If false is false"
 date:   2014-06-10 15:54:00
-categories: php
+tags:   php
+author: robojack
 ---
+
+Maybe this PHP developer doesn't realize that false will always return false.
 
 {% highlight php %}
 <?php if (false && isset($pages["projects"])) : ?>
   …
 <?php endif ?>
 {% endhighlight %}
-
 
 {% highlight php %}
 <?php if (isset($pages["projects"])) : ?>

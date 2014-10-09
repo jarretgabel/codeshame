@@ -1,4 +1,6 @@
 body
+  +sans-reg
+  margin: 0
   position: relative
 
 ////////////////////// TYPE
@@ -20,7 +22,7 @@ h3,
 h4,
 h5,
 h6
-  font-weight: normal
+  +sans-demi
 
 p
   line-height: 1.5em
@@ -54,6 +56,26 @@ iframe
 .clear
   clear: both
 
-.container
+.container,
+#content
   +container
   position: relative
+
+// .nav
+//   +desktop
+//     +span-columns(4)
+
+#content
+  +container
+  position: relative
+
+#content > div
+  +tablet
+    +span-columns(10)
+    +pre(1)
+    +post(1)
+
+  +desktop
+    +span-columns(8)
+    +pre(2)
+    +post(2)
