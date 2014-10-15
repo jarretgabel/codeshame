@@ -1,26 +1,74 @@
 .post
-  +vertical-spacing(margin, 0, 2)
+  +vertical-spacing(margin, 0, 1.5)
+  +vertical-spacing(padding, 0, 1.5)
+  position: relative
+
+.post:after
+  +absolutely-centered
+  background-color: #CCC
+  content: " "
+  display: block
+  width: 38%
+  height: 1px
+  bottom: 0
+
+.post-header
+  +vertical-spacing(margin, 0, 0.5)
+
+.post-header h1
+  margin-bottom: 0
+
+.post-meta
+  +sans-demi
+  color: #AAA
+  font-size: 14px
+  margin: 0
+
+.post-code
+  position: relative
 
 .post .highlight
   +border-radius(5px)
   margin: 0 0 2em
-  min-height: 150px
+  min-height: 200px
   overflow: auto
-  padding: 1.5em 2em
+  padding: 24px 32px 24px
+  position: relative
+  z-index: 200
 
+.post .highlight + .highlight
+  background-color: black
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  min-height: 200px
+  z-index: 100
 
-.post-tags-title
-  +sans-bold
-  display: inline-block
-  letter-spacing: 1px
-  text-transform: uppercase
+// .post .highlight:first-child:after
+//   content: "Shame"
+//   width: 50%
+//   height: 30px
+//   background-color: black
+//   display: block
+//   position: absolute
+//   top: 0
+//   left: 0
+//   color: white
+//   text-align: center
+//   line-height: 30px
+
+.post code
+  +mono-reg
+  font-size: 16px
+  padding: 0 2em 0 0
 
 .post-tag
-  +antialiased
-  +border-radius(3px)
   +sans-demi
-  background-color: #222
-  color: white
-  display: inline-block
-  font-size: 14px
-  padding: 5px 10px
+
+.divider
+  +sans-thin
+  +inline-block
+  color: black
+  font-size: 24px
+  margin: 0 4px

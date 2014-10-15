@@ -1,9 +1,22 @@
 .site-header
-  +vertical-spacing(margin, 0, 1)
-  background-color: #222
-  height: 55px
-  line-height: 55px
+  +vertical-spacing(padding, 1, 1.5)
+  +vertical-spacing(margin, 0, 1.5)
+  text-align: center
+  background-color: #EFEFEF
+  // height: 55px
+  // line-height: 55px
 
 .site-title
-  color: white
+  +sans-bold
+  font-size: 42px
 
+.site-tagline
+  font-size: 21px
+  margin: 0 0 0
+
+.site-established
+  +sans-demi
+  color: #CCC
+  letter-spacing: 1px
+  margin: 0
+  text-transform: uppercase

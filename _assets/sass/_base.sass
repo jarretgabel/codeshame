@@ -4,6 +4,7 @@
 // SUSY grid defaults
 $total-columns : 12
 $gutter-width  : 1em
+$column-width  : 6em
 $grid-padding  : $gutter-width
 
 
@@ -16,7 +17,7 @@ $grid-padding  : $gutter-width
     @content
 
 =desktop
-  $container-width: 75em
+  $container-width: 88em
   +with-grid-settings(12,4em,2em,2em)
     +at-breakpoint(60em 12 lt-ie9)
       @content

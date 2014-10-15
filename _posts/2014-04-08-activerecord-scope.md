@@ -6,11 +6,10 @@ tags:   ruby-on-rails
 author: robojack
 ---
 
-what?
 
 {% highlight ruby %}
 @posts = []
-
+  
 @author.posts.each do |post|
   if post.active?
     @posts << post

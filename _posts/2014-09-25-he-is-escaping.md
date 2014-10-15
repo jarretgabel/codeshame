@@ -6,12 +6,13 @@ tags:   jquery
 author: robojack
 ---
 
-If you're targeting a DOM element with an ID, use the ID as the selector. Mmmkay?
-
 
 {% highlight javascript %}
 $("select[id=\"audit_question_data_type\"]")
 {% endhighlight %}
+
 {% highlight javascript %}
 $("#audit_question_data_type")
 {% endhighlight %}
+
+If you're targeting a DOM element with an ID, use the ID as the selector. Mmmkay?

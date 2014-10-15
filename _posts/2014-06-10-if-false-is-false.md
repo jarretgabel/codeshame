@@ -6,7 +6,6 @@ tags:   php
 author: robojack
 ---
 
-Maybe this PHP developer doesn't realize that false will always return false.
 
 {% highlight php %}
 <?php if (false && isset($pages["projects"])) : ?>
@@ -19,3 +18,5 @@ Maybe this PHP developer doesn't realize that false will always return false.
   …
 <?php endif ?>
 {% endhighlight %}
+
+Maybe this PHP developer doesn't realize that false will always return false.

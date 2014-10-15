@@ -1,7 +1,7 @@
 # Site settings
 title: CodeSha.me
 email: caleyjack@me.com
-description: "Shaming developers one iteration at a time since 2014"
+description: "Shaming developers one iteration at a time."
 baseurl: ""
 url: "http://codesha.me"
 twitter_username: caleyjack
@@ -10,7 +10,7 @@ github_username:  robojack
 # Build settings
 markdown: redcarpet
 highlighter: pygments
-permalink: pretty
+permalink: /:year/:title
 
 # Pagination
 paginate: 10

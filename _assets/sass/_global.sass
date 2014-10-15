@@ -1,3 +1,8 @@
+*,
+*:before,
+*:after
+  +box-sizing(border-box)
+
 body
   +sans-reg
   margin: 0
@@ -30,12 +35,13 @@ p
 a,
 a:link,
 a:visited
-  +single-transition(color, 0.05s, ease-in-out)
-  text-decoration: none
+  +single-transition(color, 0.1s, ease-in-out)
+  color: #57a3d2
   outline: none
+  text-decoration: none
 
 a:hover, a:focus
-  color: #45aca8
+  color: #d25776
 
 strong
   font-weight: normal
