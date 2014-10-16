@@ -28,35 +28,76 @@
   position: relative
 
 .post .highlight
-  +border-radius(5px)
+  +antialiased
+  // +single-transition(opacity, 0.5s, ease-in-out)
   margin: 0 0 2em
   min-height: 200px
+  // opacity: 0
   overflow: auto
   padding: 24px 32px 24px
   position: relative
-  z-index: 200
+  // z-index: 200
 
-.post .highlight + .highlight
-  background-color: black
+.post-code .highlight:last-child
+  // background-color: black
   position: absolute
   top: 0
   left: 0
   width: 100%
-  min-height: 200px
-  z-index: 100
+  height: 100%
+  // z-index: 100
 
-// .post .highlight:first-child:after
-//   content: "Shame"
-//   width: 50%
-//   height: 30px
-//   background-color: black
-//   display: block
-//   position: absolute
-//   top: 0
-//   left: 0
-//   color: white
-//   text-align: center
-//   line-height: 30px
+.post-code .highlight.active
+  // opacity: 1
+  z-index: 1
+
+.post-code
+  margin-top: 51px
+
+  +tablet
+    margin-top: 58.5px
+
+  +desktop
+    margin-top: 66px
+
+.post-code-nav a
+  +antialiased
+  +sans-demi
+  +single-transition(background, 0.1s, ease-in-out)
+  background-color: lighten(#272822, 10%)
+  // border-bottom: 1px solid black
+  color: white
+  display: block
+  font-size: 14px
+  position: absolute
+  width: 50%
+  height: 36px
+  letter-spacing: 1px
+  line-height: 36px
+  text-align: center
+  text-transform: uppercase
+  top: -36px
+  z-index: 1000
+
+  +desktop
+    width: 25%
+
+.post-code-nav a:hover,
+.post-code-nav a:focus
+  background-color: lighten(#272822, 5%)
+
+.post-code-nav a:first-child
+  left: 0
+
+.post-code-nav a:last-child
+  left: 50%
+
+  +desktop
+    left: 25%
+
+.post-code-nav a.active
+  background-color: #272822
+  cursor: default
 
 .post code
   +mono-reg

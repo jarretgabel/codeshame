@@ -9,8 +9,12 @@ author: robojack
 
 {% highlight ruby %}
 unless facebook_page.nil? || facebook_page == ""
+  # do stuff
+end
 {% endhighlight %}
 
 {% highlight ruby %}
 unless facebook_page.blank?
+  # do stuff
+end
 {% endhighlight %}

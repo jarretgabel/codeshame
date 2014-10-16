@@ -20,3 +20,5 @@ author: keighl
   background: url('/assets/meter.png') no-repeat center top;
 }
 {% endhighlight %}
+
+Multiple IDs in a CSS selector is an indicator that you're doing it wrong.

@@ -5,6 +5,7 @@
 
 body
   +sans-reg
+  background-color: #EFEFEF
   margin: 0
   position: relative
 
@@ -63,7 +64,6 @@ iframe
   clear: both
 
 .container,
-#content
   +container
   position: relative
 
@@ -72,10 +72,12 @@ iframe
 //     +span-columns(4)
 
 #content
-  +container
-  position: relative
+  background-color: white
 
-#content > div
+#content > .container
+  +vertical-spacing(padding, 1.5)
+
+#content > .container >  div
   +tablet
     +span-columns(10)
     +pre(1)
