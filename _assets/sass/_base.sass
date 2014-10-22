@@ -1,14 +1,25 @@
 @import compass/css3
 @import susy
 
-// SUSY grid defaults
-$total-columns : 12
-$gutter-width  : 1em
-$column-width  : 6em
-$grid-padding  : $gutter-width
 
 
-// Media query mixins
+////////////////////////////////////
+// SUSY grid defaults //////////////
+////////////////////////////////////
+
+$total-columns     : 12
+$gutter-width      : 1em
+$column-width      : 6em
+$grid-padding      : $gutter-width
+$border-box-sizing : true
+$container-width   : 56em
+
+
+
+////////////////////////////////////
+// Media query mixins //////////////
+////////////////////////////////////
+
 =mobile
   +at-breakpoint(0em 12 36em)
     @content
@@ -18,7 +29,6 @@ $grid-padding  : $gutter-width
     @content
 
 =desktop
-  $container-width: 88em
   +with-grid-settings(12,4em,2em,2em)
     +at-breakpoint(60em 12 lt-ie9)
       @content
@@ -32,40 +42,11 @@ $grid-padding  : $gutter-width
     @content
 
 
-// Animations
-=animate($prop, $time:"", $delay:"", $ease: "")
-  @if $time == ""
-    $time: 0.4s
 
-  @if $delay == ""
-    $delay: 0s
+////////////////////////////////////
+// Placeholder styling /////////////
+////////////////////////////////////
 
-  @if $ease == ""
-    $ease: cubic-bezier(0.475, 0.465, 0.120, 1.005)
-
-  +transition-property($prop)
-  +transition-duration($time)
-  +transition-timing-function($ease)
-  +transition-delay($delay)
-
-
-=keyframes($name)
-  @-webkit-keyframes #{$name}
-    @content
-  @-moz-keyframes #{$name}
-    @content
-  @keyframes #{$name}
-    @content
-
-
-+keyframes(spin)
-  0%
-    +rotate(0deg)
-  100%
-    +rotate(360deg)
-
-
-// Placeholder styling
 =placeholder
   &.placeholder
     @content
@@ -77,7 +58,11 @@ $grid-padding  : $gutter-width
     @content
 
 
-// Absolutely centered
+
+////////////////////////////////////
+// Absolutely centered /////////////
+////////////////////////////////////
+
 =absolutely-centered
   left: 0
   right: 0

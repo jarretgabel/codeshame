@@ -9,8 +9,6 @@ body
   margin: 0
   position: relative
 
-////////////////////// TYPE
-
 h1,
 h2,
 h3,
@@ -31,7 +29,7 @@ h6
   +sans-demi
 
 p
-  line-height: 1.5em
+  line-height: 1.5
 
 a,
 a:link,
@@ -45,31 +43,22 @@ a:hover, a:focus
   color: #d25776
 
 strong
+  +sans-bold
   font-weight: normal
 
 em
   font-weight: normal
 
-em strong,
-strong em
-  font-weight: normal
-
+img
+  max-width: 100%
 
 iframe
   border: none
   display: block
 
-
-.clear
-  clear: both
-
 .container,
   +container
   position: relative
-
-// .nav
-//   +desktop
-//     +span-columns(4)
 
 #content
   background-color: white
@@ -77,13 +66,78 @@ iframe
 #content > .container
   +vertical-spacing(padding, 1.5)
 
-#content > .container >  div
+#content .container-inner
   +tablet
     +span-columns(10)
     +pre(1)
     +post(1)
 
+
+
+////////////////////////////////////
+// Site Header /////////////////////
+////////////////////////////////////
+
+.site-header
+  +vertical-spacing(padding, 1.5)
+  text-align: center
+  background-color: #EFEFEF
+
+.site-title
+  +sans-demi
+  font-size: 32px
+
   +desktop
-    +span-columns(8)
-    +pre(2)
-    +post(2)
+    font-size: 42px
+
+.site-tagline
+  color: #444
+  font-size: 16px
+  margin: 0 0 0
+
+  +desktop
+    font-size: 21px
+
+.site-established
+  +sans-demi
+  color: #CCC
+  font-size: 14px
+  letter-spacing: 1px
+  margin: 0
+  text-transform: uppercase
+
+  +desktop
+    font-size: 16px
+
+
+
+////////////////////////////////////
+// Site Footer /////////////////////
+////////////////////////////////////
+
+.site-footer
+  +vertical-spacing(padding, 1)
+  text-align: center
+
+.site-credit
+  color: #444
+
+.site-credit .icon-twitter
+  position: relative
+  top: 2px
+
+
+
+////////////////////////////////////
+// Page ////////////////////////////
+////////////////////////////////////
+
+.page .post-header
+  text-align: center
+
+.page p
+  +tablet
+    font-size: 18px
+
+  +desktop
+    font-size: 21px

@@ -19,4 +19,4 @@ details[0..2].each do |detail|
 end
 {% endhighlight %}
 
-Creating a new array from an array just to iterate through it in Rails? Shameful.
+Maybe this is a little known fact but it's much easier to use a range to iterate over a portion of an array in&nbsp;Ruby.
