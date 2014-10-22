@@ -21,4 +21,4 @@ author: keighl
 }
 {% endhighlight %}
 
-Multiple IDs in a CSS selector is an indicator that you're doing it wrong.
+Multiple IDs in a CSS selector is an indicator that you're doing it&nbsp;wrong.

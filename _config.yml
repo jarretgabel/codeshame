@@ -1,7 +1,7 @@
 # Site settings
 title: CodeSha.me
 email: caleyjack@me.com
-description: "Shaming developers one iteration at a time."
+description: "Shaming developers one iteration at a&nbsp;time."
 baseurl: ""
 url: "http://codesha.me"
 twitter_username: caleyjack

@@ -19,4 +19,4 @@ author: robojack
 <?php endif ?>
 {% endhighlight %}
 
-Maybe this PHP developer doesn't realize that false will always return false.
+Maybe this PHP developer doesn't realize that false will always return&nbsp;false.

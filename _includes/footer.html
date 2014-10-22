@@ -1,19 +1,20 @@
 <footer class="site-footer" role="contentinfo">
   <div class="container">
 
-    {% include nav.html %}
-
-    <div class="footer-col-2 column">
-      Maintained by
+    <div class="site-credit">
+      CodeSha.me is built and maintained by Caley&nbsp;Jack&nbsp;Steward
+      <br>
       {% if site.github_username %}
         <a href="https://github.com/{{ site.github_username }}">
-          <span class="username">{{ site.github_username }}</span>
+          <span class="icon-github"></span>
+          {{ site.github_username }}
         </a>
       {% endif %}
-      /
+      <span class="divider">/</span>
       {% if site.twitter_username %}
         <a href="https://twitter.com/{{ site.twitter_username }}">
-          <span class="username">{{ site.twitter_username }}</span>
+          <span class="icon-twitter"></span>
+          {{ site.twitter_username }}
         </a>
       {% endif %}
     </div>

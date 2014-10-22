@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "fontcustom";
-  src: font-url("/assets/fonts/fontcustom_c0867cc5adc039ef0dc8dec2893060d4.eot");
-  src: font-url("/assets/fonts/fontcustom_c0867cc5adc039ef0dc8dec2893060d4.eot?#iefix") format("embedded-opentype"),
-       font-url("/assets/fonts/fontcustom_c0867cc5adc039ef0dc8dec2893060d4.woff") format("woff"),
-       font-url("/assets/fonts/fontcustom_c0867cc5adc039ef0dc8dec2893060d4.ttf") format("truetype"),
-       font-url("/assets/fonts/fontcustom_c0867cc5adc039ef0dc8dec2893060d4.svg#fontcustom") format("svg");
+  src: font-url("/assets/fonts/fontcustom_011e13cada4c58adfa5507d8b58a2660.eot");
+  src: font-url("/assets/fonts/fontcustom_011e13cada4c58adfa5507d8b58a2660.eot?#iefix") format("embedded-opentype"),
+       font-url("/assets/fonts/fontcustom_011e13cada4c58adfa5507d8b58a2660.woff") format("woff"),
+       font-url("/assets/fonts/fontcustom_011e13cada4c58adfa5507d8b58a2660.ttf") format("truetype"),
+       font-url("/assets/fonts/fontcustom_011e13cada4c58adfa5507d8b58a2660.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,22 +16,17 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: font-url("/assets/fonts/fontcustom_c0867cc5adc039ef0dc8dec2893060d4.svg#fontcustom") format("svg");
+    src: font-url("/assets/fonts/fontcustom_011e13cada4c58adfa5507d8b58a2660.svg#fontcustom") format("svg");
   }
 }
 
 [data-icon]:before { content: attr(data-icon); }
 
 [data-icon]:before,
-.icon-check:before,
 .icon-chevron-left:before,
 .icon-chevron-right:before,
 .icon-close:before,
-.icon-dribbble:before,
-.icon-facebook:before,
 .icon-github:before,
-.icon-instagram:before,
-.icon-menu:before,
 .icon-plus:before,
 .icon-twitter:before {
   display: inline-block;
@@ -48,14 +43,9 @@
   font-smoothing: antialiased;
 }
 
-.icon-check:before { content: "\f102"; }
-.icon-chevron-left:before { content: "\f103"; }
-.icon-chevron-right:before { content: "\f104"; }
-.icon-close:before { content: "\f106"; }
-.icon-dribbble:before { content: "\f107"; }
-.icon-facebook:before { content: "\f108"; }
-.icon-github:before { content: "\f109"; }
-.icon-instagram:before { content: "\f10a"; }
-.icon-menu:before { content: "\f10b"; }
-.icon-plus:before { content: "\f10c"; }
-.icon-twitter:before { content: "\f10e"; }
+.icon-chevron-left:before { content: "\f100"; }
+.icon-chevron-right:before { content: "\f101"; }
+.icon-close:before { content: "\f102"; }
+.icon-github:before { content: "\f103"; }
+.icon-plus:before { content: "\f104"; }
+.icon-twitter:before { content: "\f105"; }

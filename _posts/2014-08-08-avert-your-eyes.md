@@ -11,4 +11,6 @@ author: robojack
 csv = hash.collect { |key,value| value.is_a?(Hash) ? value.first.second : value }.collect{|str| str.delete(",").delete("'").delete('"') }.join(", ")
 {% endhighlight %}
 
-Not sure there is a proper solution to such a monstrosity aside from a complete refactor. If you can decode this, drop us a line. We have a job for you.
+![Scared](/assets/images/scared.png)
+
+Not sure there is a proper solution to such a monstrosity aside from a complete refactor. If you can decode this, drop us a line. We have a job for&nbsp;you.

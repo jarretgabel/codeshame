@@ -24,7 +24,7 @@ input:
 
 output:
   fonts: assets/fonts
-  css: _assets/css
+  css: _assets/sass
 
 templates:
   - scss

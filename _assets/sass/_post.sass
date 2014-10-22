@@ -16,39 +16,46 @@
   +vertical-spacing(margin, 0, 0.5)
 
 .post-header h1
-  margin-bottom: 0
+  font-size: 24px
+  line-height: 1.1
+  margin-bottom: 0px
+
+  +tablet
+    font-size: 28px
+
+  +desktop
+    font-size: 32px
 
 .post-meta
   +sans-demi
   color: #AAA
-  font-size: 14px
+  font-size: 12px
   margin: 0
+
+  +desktop
+    font-size: 14px
 
 .post-code
   position: relative
 
 .post .highlight
   +antialiased
-  // +single-transition(opacity, 0.5s, ease-in-out)
   margin: 0 0 2em
-  min-height: 200px
-  // opacity: 0
   overflow: auto
   padding: 24px 32px 24px
   position: relative
-  // z-index: 200
+
+  +tablet-desktop
+    min-height: 200px
 
 .post-code .highlight:last-child
-  // background-color: black
   position: absolute
   top: 0
   left: 0
   width: 100%
   height: 100%
-  // z-index: 100
 
 .post-code .highlight.active
-  // opacity: 1
   z-index: 1
 
 .post-code
@@ -65,7 +72,6 @@
   +sans-demi
   +single-transition(background, 0.1s, ease-in-out)
   background-color: lighten(#272822, 10%)
-  // border-bottom: 1px solid black
   color: white
   display: block
   font-size: 14px
@@ -98,11 +104,16 @@
 .post-code-nav a.active
   background-color: #272822
   cursor: default
+  height: 38px
+  top: -38px
 
 .post code
   +mono-reg
-  font-size: 16px
+  font-size: 14px
   padding: 0 2em 0 0
+
+  +desktop
+    font-size: 16px
 
 .post-tag
   +sans-demi
@@ -112,4 +123,7 @@
   +inline-block
   color: black
   font-size: 24px
-  margin: 0 4px
+  margin: 0 2px
+
+  +desktop
+    margin: 0 4px

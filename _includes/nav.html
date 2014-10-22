@@ -1,5 +1,7 @@
 <nav class="site-nav">
-  {% for page in site.pages %}
-    {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-  {% endfor %}
+  <a href="{{ '/about' | prepend: site.baseurl }}" title="About CodeShame">About</a>
+  <span class="divider">/</span>
+  <a href="https://github.com/robojack/codeshame" title="Make a pull request on GitHub to contribute">Contribute</a>
+  <span class="divider">/</span>
+  <a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="Subscribe via RSS">Subscribe</a>
 </nav>
