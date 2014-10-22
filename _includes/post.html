@@ -17,5 +17,11 @@
   </header>
   <article class="post-content">
     {{ post.content }}
+    <p class="post-share">
+      <a href="https://twitter.com/intent/tweet?url={{ post.url | prepend: site.baseurl | prepend: site.url | cgi_escape }}&amp;text={{ '#CodeShame' | cgi_escape }}">
+        <span class="icon-twitter"></span>
+        Tweet
+      </a>
+    </p>
   </article>
 </div>
