@@ -116,15 +116,29 @@
   +desktop
     font-size: 16px
 
-.post-tag
-  +sans-demi
+.no-js
+  .highlight
+    // overflow-y: visible
+    padding-top: 50px
 
-.divider
-  +sans-thin
-  +inline-block
-  color: black
-  font-size: 24px
-  margin: 0 2px
+  .highlight:before
+    +antialiased
+    +sans-demi
+    background-color: black
+    content: "Shame"
+    display: inline-block
+    letter-spacing: 1px
+    line-height: 36px
+    padding: 0 32px
+    position: absolute
+    top: 0
+    left: 0
+    text-transform: uppercase
+    // width: 50%
+    height: 36px
 
-  +desktop
-    margin: 0 4px
+    // +desktop
+    //   width: 25%
+
+  .highlight + .highlight:before
+    content: "Honor"

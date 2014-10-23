@@ -1,43 +1,44 @@
 !!! 5
-%head
-  %meta{ charset: 'utf-8' }
-  %title
-    {% if page.title %}{{ page.title }} - {% endif %}CodeShame
-  %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1' }
-  %meta{ name: 'description', content: '{{ site.description }}' }
-  %link{ rel: 'canonical', href: "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" }
+%html.no-js{ lang: 'en' }
+  %head
+    %meta{ charset: 'utf-8' }
+    %title
+      {% if page.title %}{{ page.title }} - {% endif %}CodeShame
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    %meta{ name: 'description', content: '{{ site.description }}' }
+    %link{ rel: 'canonical', href: "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" }
 
-  %link{ rel: "stylesheet", href: "/assets/css/screen.css?#{Time.now.to_i}" }
+    %link{ rel: "stylesheet", href: "/assets/css/screen.css?#{Time.now.to_i}" }
 
-  %script{ src: "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" }
+    %script{ src: "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" }
 
-%body
-  {% include header.html %}
+  %body
+    {% include header.html %}
 
-  #content{ role: "main" }
-    .container
-      .container-inner
-        {{content}}
+    #content{ role: "main" }
+      .container
+        .container-inner
+          {{content}}
 
-  {% include footer.html %}
+    {% include footer.html %}
 
-  %script{ src: "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" }
-  %script{ src: "/assets/js/app.js?#{Time.now.to_i}" }
+    %script{ src: "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" }
+    %script{ src: "/assets/js/app.js?#{Time.now.to_i}" }
 
-  %script{ async: true, src: "//platform.twitter.com/widgets.js" }
+    %script{ async: true, src: "//platform.twitter.com/widgets.js" }
 
-  :javascript
-    var clicky_site_ids = clicky_site_ids || [];
-    clicky_site_ids.push(100783151);
-    (function() {
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = '//static.getclicky.com/js';
-      ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
-    })();
-    
-  %noscript
-    %p
-      %img{ alt: "Clicky", width: 1, height: 1, src: "//in.getclicky.com/100783151ns.gif" }
+    :javascript
+      var clicky_site_ids = clicky_site_ids || [];
+      clicky_site_ids.push(100783151);
+      (function() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = '//static.getclicky.com/js';
+        ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+      })();
+      
+    %noscript
+      %p
+        %img{ alt: "Clicky", width: 1, height: 1, src: "//in.getclicky.com/100783151ns.gif" }
 

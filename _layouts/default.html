@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<head>
-  <meta charset='utf-8'>
-  <title>
-    {% if page.title %}{{ page.title }} - {% endif %}CodeShame
-  </title>
-  <meta content='width=device-width, initial-scale=1' name='viewport'>
-  <meta content='{{ site.description }}' name='description'>
-  <link href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" rel='canonical'>
-  <link href='/assets/css/screen.css?1414002716' rel='stylesheet'>
-  <script src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
-</head>
-<body>
-  {% include header.html %}
-  <div id='content' role='main'>
-    <div class='container'>
-      <div class='container-inner'>
-        {{content}}
+<html class='no-js' lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>
+      {% if page.title %}{{ page.title }} - {% endif %}CodeShame
+    </title>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <meta content='{{ site.description }}' name='description'>
+    <link href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" rel='canonical'>
+    <link href='/assets/css/screen.css?1414025195' rel='stylesheet'>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+  </head>
+  <body>
+    {% include header.html %}
+    <div id='content' role='main'>
+      <div class='container'>
+        <div class='container-inner'>
+          {{content}}
+        </div>
       </div>
     </div>
-  </div>
-  {% include footer.html %}
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
-  <script src='/assets/js/app.js?1414002716'></script>
-  <script async src='//platform.twitter.com/widgets.js'></script>
-  <script>
-    var clicky_site_ids = clicky_site_ids || [];
-    clicky_site_ids.push(100783151);
-    (function() {
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = '//static.getclicky.com/js';
-      ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
-    })();
-  </script>
-  <noscript>
-    <p>
-      <img alt='Clicky' height='1' src='//in.getclicky.com/100783151ns.gif' width='1'>
-    </p>
-  </noscript>
-</body>
+    {% include footer.html %}
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+    <script src='/assets/js/app.js?1414025195'></script>
+    <script async src='//platform.twitter.com/widgets.js'></script>
+    <script>
+      var clicky_site_ids = clicky_site_ids || [];
+      clicky_site_ids.push(100783151);
+      (function() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = '//static.getclicky.com/js';
+        ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+      })();
+    </script>
+    <noscript>
+      <p>
+        <img alt='Clicky' height='1' src='//in.getclicky.com/100783151ns.gif' width='1'>
+      </p>
+    </noscript>
+  </body>
+</html>

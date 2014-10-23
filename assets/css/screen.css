@@ -371,7 +371,32 @@ iframe {
   }
 }
 
-/* line 81, ../../_assets/sass/_global.sass */
+/* line 75, ../../_assets/sass/_global.sass */
+.divider {
+  font-family: "AvenirNext-UltraLight", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  color: black;
+  font-size: 24px;
+  margin: 0 2px;
+}
+@media (min-width: 60em) {
+  /* line 75, ../../_assets/sass/_global.sass */
+  .divider {
+    margin: 0 4px;
+  }
+}
+/* line 91, ../../../../.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/susy-1.0.9/sass/susy/_media.scss */
+.lt-ie9 .divider {
+  margin: 0 4px;
+}
+
+/* line 91, ../../_assets/sass/_global.sass */
 .site-header {
   padding-top: 45px;
   padding-bottom: 45px;
@@ -379,14 +404,14 @@ iframe {
   background-color: #efefef;
 }
 @media (min-width: 36em) and (max-width: 60em) {
-  /* line 81, ../../_assets/sass/_global.sass */
+  /* line 91, ../../_assets/sass/_global.sass */
   .site-header {
     padding-top: 67.5px;
     padding-bottom: 67.5px;
   }
 }
 @media (min-width: 60em) {
-  /* line 81, ../../_assets/sass/_global.sass */
+  /* line 91, ../../_assets/sass/_global.sass */
   .site-header {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -398,14 +423,14 @@ iframe {
   padding-bottom: 90px;
 }
 
-/* line 86, ../../_assets/sass/_global.sass */
+/* line 96, ../../_assets/sass/_global.sass */
 .site-title {
   font-family: "AvenirNext-Demibold", "Helvetica Neue", sans-serif;
   font-weight: 600;
   font-size: 32px;
 }
 @media (min-width: 60em) {
-  /* line 86, ../../_assets/sass/_global.sass */
+  /* line 96, ../../_assets/sass/_global.sass */
   .site-title {
     font-size: 42px;
   }
@@ -415,14 +440,14 @@ iframe {
   font-size: 42px;
 }
 
-/* line 93, ../../_assets/sass/_global.sass */
+/* line 103, ../../_assets/sass/_global.sass */
 .site-tagline {
   color: #444444;
   font-size: 16px;
   margin: 0 0 0;
 }
 @media (min-width: 60em) {
-  /* line 93, ../../_assets/sass/_global.sass */
+  /* line 103, ../../_assets/sass/_global.sass */
   .site-tagline {
     font-size: 21px;
   }
@@ -432,7 +457,7 @@ iframe {
   font-size: 21px;
 }
 
-/* line 101, ../../_assets/sass/_global.sass */
+/* line 111, ../../_assets/sass/_global.sass */
 .site-established {
   font-family: "AvenirNext-Demibold", "Helvetica Neue", sans-serif;
   font-weight: 600;
@@ -443,7 +468,7 @@ iframe {
   text-transform: uppercase;
 }
 @media (min-width: 60em) {
-  /* line 101, ../../_assets/sass/_global.sass */
+  /* line 111, ../../_assets/sass/_global.sass */
   .site-established {
     font-size: 16px;
   }
@@ -453,21 +478,21 @@ iframe {
   font-size: 16px;
 }
 
-/* line 118, ../../_assets/sass/_global.sass */
+/* line 128, ../../_assets/sass/_global.sass */
 .site-footer {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
 }
 @media (min-width: 36em) and (max-width: 60em) {
-  /* line 118, ../../_assets/sass/_global.sass */
+  /* line 128, ../../_assets/sass/_global.sass */
   .site-footer {
     padding-top: 45px;
     padding-bottom: 45px;
   }
 }
 @media (min-width: 60em) {
-  /* line 118, ../../_assets/sass/_global.sass */
+  /* line 128, ../../_assets/sass/_global.sass */
   .site-footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -479,30 +504,30 @@ iframe {
   padding-bottom: 60px;
 }
 
-/* line 122, ../../_assets/sass/_global.sass */
+/* line 132, ../../_assets/sass/_global.sass */
 .site-credit {
   color: #444444;
 }
 
-/* line 125, ../../_assets/sass/_global.sass */
+/* line 135, ../../_assets/sass/_global.sass */
 .site-credit .icon-twitter {
   position: relative;
   top: 2px;
 }
 
-/* line 135, ../../_assets/sass/_global.sass */
+/* line 145, ../../_assets/sass/_global.sass */
 .page .post-header {
   text-align: center;
 }
 
 @media (min-width: 36em) and (max-width: 60em) {
-  /* line 138, ../../_assets/sass/_global.sass */
+  /* line 148, ../../_assets/sass/_global.sass */
   .page p {
     font-size: 18px;
   }
 }
 @media (min-width: 60em) {
-  /* line 138, ../../_assets/sass/_global.sass */
+  /* line 148, ../../_assets/sass/_global.sass */
   .page p {
     font-size: 21px;
   }
@@ -788,33 +813,29 @@ iframe {
   font-size: 16px;
 }
 
-/* line 119, ../../_assets/sass/_post.sass */
-.post-tag {
+/* line 120, ../../_assets/sass/_post.sass */
+.no-js .highlight {
+  padding-top: 50px;
+}
+/* line 124, ../../_assets/sass/_post.sass */
+.no-js .highlight:before {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   font-family: "AvenirNext-Demibold", "Helvetica Neue", sans-serif;
   font-weight: 600;
-}
-
-/* line 122, ../../_assets/sass/_post.sass */
-.divider {
-  font-family: "AvenirNext-UltraLight", "Helvetica Neue", sans-serif;
-  font-weight: 400;
-  display: -moz-inline-stack;
+  background-color: black;
+  content: "Shame";
   display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-  color: black;
-  font-size: 24px;
-  margin: 0 2px;
+  letter-spacing: 1px;
+  line-height: 36px;
+  padding: 0 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  height: 36px;
 }
-@media (min-width: 60em) {
-  /* line 122, ../../_assets/sass/_post.sass */
-  .divider {
-    margin: 0 4px;
-  }
-}
-/* line 91, ../../../../.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/susy-1.0.9/sass/susy/_media.scss */
-.lt-ie9 .divider {
-  margin: 0 4px;
+/* line 143, ../../_assets/sass/_post.sass */
+.no-js .highlight + .highlight:before {
+  content: "Honor";
 }
