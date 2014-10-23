@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "There has to be a better way!"
-date:   2014-04-02 15:18:00
+date:   2014-10-10 15:18:00
 tags:   ruby-on-rails
 author: robojack
 ---

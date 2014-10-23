@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Avert your eyes my son"
-date:   2014-08-08 14:18:00
+date:   2014-11-07 14:18:00
 tags:   ruby-on-rails
 author: robojack
 ---

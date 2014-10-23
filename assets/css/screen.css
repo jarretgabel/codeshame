@@ -401,7 +401,6 @@ iframe {
   padding-top: 45px;
   padding-bottom: 45px;
   text-align: center;
-  background-color: #efefef;
 }
 @media (min-width: 36em) and (max-width: 60em) {
   /* line 91, ../../_assets/sass/_global.sass */
@@ -423,14 +422,14 @@ iframe {
   padding-bottom: 90px;
 }
 
-/* line 96, ../../_assets/sass/_global.sass */
+/* line 95, ../../_assets/sass/_global.sass */
 .site-title {
   font-family: "AvenirNext-Demibold", "Helvetica Neue", sans-serif;
   font-weight: 600;
   font-size: 32px;
 }
 @media (min-width: 60em) {
-  /* line 96, ../../_assets/sass/_global.sass */
+  /* line 95, ../../_assets/sass/_global.sass */
   .site-title {
     font-size: 42px;
   }
@@ -440,14 +439,14 @@ iframe {
   font-size: 42px;
 }
 
-/* line 103, ../../_assets/sass/_global.sass */
+/* line 102, ../../_assets/sass/_global.sass */
 .site-tagline {
   color: #444444;
   font-size: 16px;
   margin: 0 0 0;
 }
 @media (min-width: 60em) {
-  /* line 103, ../../_assets/sass/_global.sass */
+  /* line 102, ../../_assets/sass/_global.sass */
   .site-tagline {
     font-size: 21px;
   }
@@ -457,7 +456,7 @@ iframe {
   font-size: 21px;
 }
 
-/* line 111, ../../_assets/sass/_global.sass */
+/* line 110, ../../_assets/sass/_global.sass */
 .site-established {
   font-family: "AvenirNext-Demibold", "Helvetica Neue", sans-serif;
   font-weight: 600;
@@ -468,7 +467,7 @@ iframe {
   text-transform: uppercase;
 }
 @media (min-width: 60em) {
-  /* line 111, ../../_assets/sass/_global.sass */
+  /* line 110, ../../_assets/sass/_global.sass */
   .site-established {
     font-size: 16px;
   }
@@ -478,21 +477,21 @@ iframe {
   font-size: 16px;
 }
 
-/* line 128, ../../_assets/sass/_global.sass */
+/* line 127, ../../_assets/sass/_global.sass */
 .site-footer {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
 }
 @media (min-width: 36em) and (max-width: 60em) {
-  /* line 128, ../../_assets/sass/_global.sass */
+  /* line 127, ../../_assets/sass/_global.sass */
   .site-footer {
     padding-top: 45px;
     padding-bottom: 45px;
   }
 }
 @media (min-width: 60em) {
-  /* line 128, ../../_assets/sass/_global.sass */
+  /* line 127, ../../_assets/sass/_global.sass */
   .site-footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -504,30 +503,30 @@ iframe {
   padding-bottom: 60px;
 }
 
-/* line 132, ../../_assets/sass/_global.sass */
+/* line 131, ../../_assets/sass/_global.sass */
 .site-credit {
   color: #444444;
 }
 
-/* line 135, ../../_assets/sass/_global.sass */
+/* line 134, ../../_assets/sass/_global.sass */
 .site-credit .icon-twitter {
   position: relative;
   top: 2px;
 }
 
-/* line 145, ../../_assets/sass/_global.sass */
+/* line 144, ../../_assets/sass/_global.sass */
 .page .post-header {
   text-align: center;
 }
 
 @media (min-width: 36em) and (max-width: 60em) {
-  /* line 148, ../../_assets/sass/_global.sass */
+  /* line 147, ../../_assets/sass/_global.sass */
   .page p {
     font-size: 18px;
   }
 }
 @media (min-width: 60em) {
-  /* line 148, ../../_assets/sass/_global.sass */
+  /* line 147, ../../_assets/sass/_global.sass */
   .page p {
     font-size: 21px;
   }

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "You only need one line"
-date:   2014-04-08 12:04:00
+date:   2014-10-17 12:04:00
 tags:   ruby-on-rails
 author: robojack
 ---

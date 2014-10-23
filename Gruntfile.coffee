@@ -4,10 +4,6 @@ module.exports = (grunt) ->
 
     pkg: grunt.file.readJSON('package.json')
 
-    bower_concat:
-      all:
-        dest: 'assets/js/vendor.js',
-
     coffee:
       compile:
         files:
@@ -32,12 +28,10 @@ module.exports = (grunt) ->
           hostname: '*'
 
   grunt.loadNpmTasks 'grunt-contrib-watch'
-  grunt.loadNpmTasks 'grunt-modernizr'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-concat'
-  grunt.loadNpmTasks 'grunt-bower-concat'
   grunt.loadNpmTasks 'grunt-contrib-connect'
 
-  grunt.registerTask 'default', ['bower_concat', 'coffee', 'watch']
+  grunt.registerTask 'default', ['coffee', 'watch']
 
   return

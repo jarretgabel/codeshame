@@ -6,8 +6,16 @@
       </a>
     </h1>
     <div class="post-meta">
-      {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} <span class="divider">/</span> by <a href="https://github.com/{{post.author}}">{{ post.author }}</a>{% endif %}
-      {% if post.tags %} <span class="divider">/</span>
+      {{ post.date | date: "%b %-d, %Y" }}
+      {% if post.author %}
+        <span class="divider">/</span>
+        by <a href="https://github.com/{{post.author}}">{{ post.author }}</a>
+      {% else %}
+        <span class="divider">/</span>
+        by anonymous 
+      {% endif %}
+      {% if post.tags %}
+        <span class="divider">/</span>
         {% for tag in post.tags %}
           <span class="post-tag">{{ tag }}</span>
         {% endfor %}
