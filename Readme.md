@@ -1,15 +1,17 @@
 # CodeShame
 
-Welcome to CodeShame! So you think you found some bad code that needs to be publicly shamed? Follow the instructions below:
+Welcome to CodeShame! This project is the lovechild of [myself](//github.com/robojack) and [keighl](//github.com/keighl). After years of reviewing terrible code from supposed web and app developers, we figured we had to share it with the world and help right these wrongs.
+
+So you think you found some bad code that needs to be publicly shamed? Follow the instructions below:
 
 ### Contribute
-1. Create a new markdown file in `_posts/` ([example](#jekyll-post-example))
+1. Create a new markdown file in `_posts/` ([example here](#jekyll-post-example))
 1. Submit a pull request
 
-Simple, right? From there it will be reviewed and merged.
+Simple, right?
 
 ### Guidelines
-- The code in question should break convention, lack commonsense or ignore well known patterns of a language or framework
+- The code in question should break convention, lack commonsense and/or ignore well known patterns of a language or framework
 - Give context and provide a solution or documentation when possible
 - Feel free to add a gif or rage face to lighten the mood
 
@@ -44,7 +46,7 @@ author: GitHub username (optional)
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. (optional)
 ```
 
-You must include the Jekyll front matter found inbetween the set of three dashes. If your post doesn't include a solution, remove the second highlight block. Images and copy are optional but some copy to provide context is recommended.
+If your post doesn't include a solution, remove the second `highlight` block. Images and copy are optional but some copy to provide context is recommended.
 
 ### Local Setup
 In case you want to run this locally:
