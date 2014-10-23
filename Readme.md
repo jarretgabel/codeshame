@@ -3,11 +3,10 @@
 Welcome to CodeShame! So you think you found some bad code that needs to be publicly shamed? Follow the instructions below:
 
 ### Contribute
-1. Clone this repo `$ git clone git@github.com:robojack/codeshame.git`
 1. Create a new markdown file in `_posts/` ([example](#jekyll-post-example))
 1. Submit a pull request
 
-From there it will be reviewed and merged.
+Simple, right? From there it will be reviewed and merged.
 
 ### Guidelines
 - The code in question should break convention, lack commonsense or ignore well known patterns of a language or framework
@@ -50,7 +49,6 @@ You must include the Jekyll front matter found inbetween the set of three dashes
 ### Local Setup
 In case you want to run this locally:
 
-1. `git clone git@github.com:robojack/codeshame.git`
 1. `$ cd path/to/project`
 1. `$ bundle install`
 1. `$ npm install`
