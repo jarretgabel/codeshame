@@ -5,13 +5,15 @@ Welcome to CodeShame! This project is the lovechild of [myself](//github.com/rob
 So you think you found some bad code that needs to be publicly shamed? Follow the instructions below:
 
 ### Contribute
+
+1. Fork this repo!
 1. Create a new markdown file in `_posts/` ([example here](#jekyll-post-example))
 1. Submit a pull request
 
 Simple, right?
 
 ### Guidelines
-- The code in question should break convention, lack commonsense and/or ignore well known patterns of a language or framework
+- The code in question should break convention, lack common sense and/or ignore well known patterns of a language or framework
 - Give context and provide a solution or documentation when possible
 - Feel free to add a gif or rage face to lighten the mood
 
