@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "If false is false"
-date:   2014-10-31 15:54:00
+date:   2014-10-31 12:00:00
 tags:   php
 author: robojack
 ---
