@@ -13,4 +13,4 @@ csv = hash.collect { |key,value| value.is_a?(Hash) ? value.first.second : value 
 
 ![Scared](/assets/images/scared.png)
 
-Not sure there is a proper solution to such a monstrosity aside from a complete refactor. If you can decode this, drop us a line. I have a job for&nbsp;you.
+Not sure there is a proper solution to such a monstrosity aside from a complete refactor. If you can decode this, drop me a line. I have a job for&nbsp;you.
