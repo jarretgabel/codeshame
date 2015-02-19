@@ -24,6 +24,6 @@ Good Lawd! Where do I start?! There are so many better ways to do this... Any de
   1. ($ selector) vs $(selector). Just because you can, doesn't mean you should.
   2. Don't forget to cache your selectors!
   3. Unnecessary specificity.
-  4. jQuery.eq() and .first() already return a collection making the extra jquery wrapper extraneous.
+  4. jQuery's .eq() and .first() methods already return a collection making extra wrappers extraneous.
 
 ![Facepalm](/assets/images/homer.gif)
